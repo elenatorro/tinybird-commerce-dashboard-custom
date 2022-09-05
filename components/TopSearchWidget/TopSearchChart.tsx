@@ -1,12 +1,12 @@
 import { Fragment } from 'react'
 import { cx, formatNumber } from '../../lib/utils'
-import { TopSource } from '../../lib/types/top-sources'
+import { TopSearch } from '../../lib/types/top-search'
 import useBarChart from '../../lib/hooks/use-bar-chart'
 
 type TopSearchChartProps = {
   hits: number[]
   values: string[]
-  data: TopSource[]
+  data: TopSearch[]
 }
 
 export default function TopSearchChart({
@@ -27,7 +27,7 @@ export default function TopSearchChart({
         </div>
       </div>
       <div className="grid gap-y-1 gap-x-4 relative grid-cols-[2fr,1fr] sm:grid-cols-[4fr,1fr]">
-        {data.map(({ value, href, hits }) => {
+        {data.map(({ value, hits }) => {
           return (
             <Fragment key={value}>
               <div className='flex items-center text-sm leading-5 text-primary h-9 px-4 py-2 rounded-md z-10 overflow-hidden'>

@@ -1,10 +1,9 @@
 export type TopSearchData = {
-  referrer: string
-  visits: number
+  value: string
+  hits: number
 }
 
 export type TopSearch = {
-  referrer: string
-  visits: number
-  href?: string
+  value: string
+  hits: number
 }

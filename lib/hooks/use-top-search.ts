@@ -1,5 +1,5 @@
 import { queryPipe } from '../api'
-import { TopSource, TopSearchData } from '../types/top-sources'
+import { TopSearch, TopSearchData } from '../types/top-search'
 import useQuery from './use-query'
 
 async function getTopSearch() {
@@ -10,7 +10,7 @@ async function getTopSearch() {
     }
   )
 
-  const data: TopSource[] = [...queryData]
+  const data: TopSearch[] = [...queryData]
     .sort((a, b) => b.hits - a.hits)
     .map(({ hits, value }) => ({
       value,
