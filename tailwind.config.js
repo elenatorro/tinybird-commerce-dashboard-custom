@@ -14,13 +14,13 @@ module.exports = {
     extend: {
       colors: {
         current: 'currentColor',
-        primary: '#0066FF',
-        primaryDark: '#0146AE',
+        primary: '#1FCC83',
+        primaryDark: '#178f5c',
         primaryLight: '#e5f0ff',
         secondary: '#25283D',
         secondaryLight: '#A5A7B4',
-        success: '#1FCC83',
-        warning: '#FFFDE9',
+        success: '#53e06f',
+        warning: '#f5ec90',
         error: '#F76363',
         body: '#f6f7f9',
         'neutral-01': '#fff',
